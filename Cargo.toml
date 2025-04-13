@@ -1,0 +1,16 @@
+[package]
+edition = "2024"
+name = "rspirv-ext"
+version = "0.1.0"
+
+[features]
+deserialize = ['serde', 'bitflags/serde']
+serialize = ['serde', 'bitflags/serde']
+
+[dependencies]
+bitflags = "2.9"
+rspirv = { git = "https://github.com/gfx-rs/rspirv.git", rev = "267882d4e77a7457a1d87e3c8189f0d44e19e169" }
+serde = { version = "1", features = ["derive"], optional = true }
+
+[workspace]
+members = ["autogen", "."]
