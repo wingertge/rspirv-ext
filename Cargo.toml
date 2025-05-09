@@ -1,6 +1,9 @@
 [package]
+description = "Ergonomic SPIR-V extension bindings for rspirv"
 edition = "2024"
+license = "Apache-2.0"
 name = "rspirv-ext"
+repository = "https://github.com/wingertge/rspirv-ext"
 version = "0.1.0"
 
 [features]
